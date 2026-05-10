@@ -18,6 +18,15 @@ A web-based certificate generation system built for workshop and event managemen
 - Instant certificate generation
 - Clean and simple UI
 - Works on all devices
+## Screenshots
 
+### Landing Page
+![Landing Page](assets/landing.jpeg)
+
+### Generated Certificate
+![Certificate](assets/cirti.jpeg)
+
+### QR Poster
+![Poster](assets/poster.jpeg)
 ## Built by
 Ghunain Fayaz — Full-Stack Developer & AI Engineer
