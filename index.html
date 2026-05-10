@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator - Premium Certificate Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner-container">
+            <div class="spinner"></div>
+            <p>Generating your certificate...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-logo-section">
+                <img class="header-logo" src="logo.png" alt="Muhammad Ali Jinnah University Logo">
+            </div>
+            <div class="header-content">
+                <h1 class="header-title">Certificate Generator</h1>
+                <p class="header-subtitle">Muhammad Ali Jinnah University</p>
+            </div>
+        </header>
+
+        <!-- Form Section -->
+        <section id="formSection" class="form-section">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Generate Your Certificate</h2>
+                    <p>Enter your details below to create a personalized certificate</p>
+                </div>
+
+                <form id="certificateForm" class="certificate-form">
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="studentName" class="form-label">
+                            <span class="label-text">Full Name</span>
+                            <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="studentName" 
+                            name="studentName" 
+                            placeholder="Enter your full name"
+                            class="form-input"
+                            required
+                        >
+                        <span class="input-focus"></span>
+                    </div>
+
+                    <!-- Student ID Input -->
+                    <div class="form-group">
+                        <label for="studentId" class="form-label">
+                            <span class="label-text">Student ID</span>
+                            <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="studentId" 
+                            name="studentId" 
+                            placeholder="e.g., SP25-BSCS-0012"
+                            class="form-input"
+                            required
+                            autocomplete="off"
+                            maxlength="14"
+                        >
+                        <span class="input-focus"></span>
+                    </div>
+
+                    <!-- University Name (Pre-filled, Disabled) -->
+                    <div class="form-group">
+                        <label for="universityName" class="form-label">
+                            <span class="label-text">University</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="universityName" 
+                            name="universityName" 
+                            class="form-input"
+                            disabled
+                        >
+                    </div>
+
+                    <!-- Event Name (Pre-filled, Disabled) -->
+                    <div class="form-group">
+                        <label for="eventName" class="form-label">
+                            <span class="label-text">Event Name</span>
+                        </label>
+                        <textarea 
+                            id="eventName" 
+                            name="eventName" 
+                            class="form-input textarea"
+                            disabled
+                            rows="3"
+                        ></textarea>
+                    </div>
+
+                    <!-- Instructor (Pre-filled, Disabled) -->
+                    <div class="form-group">
+                        <label for="instructor" class="form-label">
+                            <span class="label-text">Instructor</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="instructor" 
+                            name="instructor" 
+                            class="form-input"
+                            disabled
+                        >
+                    </div>
+
+                    <!-- Hidden Date Input -->
+                    <input type="hidden" id="certificateDate" name="certificateDate">
+
+                    <!-- Buttons -->
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Generate Certificate</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                        <button type="reset" class="btn btn-secondary">
+                            <span class="btn-text">Clear</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="form-info">
+                    <p>📋 Your name and student ID are required. Other fields are pre-filled automatically.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Muhammad Ali Jinnah University. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

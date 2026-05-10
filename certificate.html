@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate - Muhammad Ali Jinnah University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="certificate-page">
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner-container">
+            <div class="spinner"></div>
+            <p>Preparing your certificate...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header header-compact">
+            <div class="header-logo-section">
+                <img class="header-logo" src="logo.png" alt="Muhammad Ali Jinnah University Logo">
+            </div>
+            <div class="header-content">
+                <h1 class="header-title">Your Certificate</h1>
+                <p class="header-subtitle">Download or print (11 × 8.5 in)</p>
+            </div>
+        </header>
+
+        <section class="certificate-section">
+            <div class="certificate-wrapper">
+                <div id="certificatePreview" class="certificate-preview" aria-label="Certificate Preview">
+                    <div class="certificate-stage">
+                        <div class="certificate-scale" id="certificateScale">
+                            <div class="certificate-container">
+                            <div class="certificate-curve-top"></div>
+
+                            <div class="certificate-header">
+                                <div class="certificate-logo" aria-label="University Logo">
+                                    <img class="certificate-logo-img" src="logo.png" alt="Muhammad Ali Jinnah University Logo">
+                                </div>
+                                <h3 class="certificate-university-header">MUHAMMAD ALI JINNAH UNIVERSITY</h3>
+                            </div>
+
+                            <div class="certificate-title-section">
+                                <h1 class="certificate-title">CERTIFICATE</h1>
+                                <p class="certificate-subtitle">OF PARTICIPATION</p>
+                                <p class="certificate-subtitle-secondary">IN WORKSHOPS</p>
+                                <div class="certificate-title-line"></div>
+                            </div>
+
+                            <div class="certificate-body">
+                                <p class="certificate-intro">THIS CERTIFICATE IS PROUDLY PRESENTED TO</p>
+
+                                <h2 class="certificate-name" id="displayStudentName">Your Full Name</h2>
+
+                                <p class="certificate-id" id="certificateIdRow">Student ID: <span id="displayStudentId">SP25-BSCS-0012</span></p>
+
+                                <p class="certificate-of-text">of <span id="displayUniversityName">Muhammad Ali Jinnah University</span></p>
+                                <p class="certificate-for-text">for participating in the workshop</p>
+
+                                <p class="certificate-event" id="displayEventName">From Graduate to Industry-Ready: Mastering AI, Careers &amp; LinkedIn Presence</p>
+                            </div>
+
+                            <div class="certificate-bottom-section">
+                                <div class="certificate-signature-block">
+                                    <p class="certificate-conducted-by">Conducted by</p>
+                                    <div class="certificate-signature-line"></div>
+                                    <p class="certificate-instructor" id="displayInstructor">Miss Maha Irfan</p>
+                                    <p class="certificate-instructor-title">Instructor</p>
+                                    <p class="certificate-date-text">Date: <span id="displayDate">May 7, 2026</span></p>
+                                </div>
+                            </div>
+
+                            <div class="certificate-curve-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-actions">
+                    <button id="downloadBtn" class="btn btn-primary btn-large">
+                        <span class="btn-icon">⬇</span>
+                        <span class="btn-text">Download PDF</span>
+                    </button>
+                    <button id="printBtn" class="btn btn-secondary btn-large">
+                        <span class="btn-icon">🖨</span>
+                        <span class="btn-text">Print</span>
+                    </button>
+                    <button id="backBtn" class="btn btn-tertiary btn-large">
+                        <span class="btn-icon">←</span>
+                        <span class="btn-text">Back</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Muhammad Ali Jinnah University. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
